@@ -12,7 +12,7 @@ public class ReaderObserver implements  Observer<String>{
     }
 
     @Override
-    public void update(Subject subject, String obj) {
+    public void update(Observable subject, String obj) {
         System.out.println("读者是："+this.reader+","+"报社消息："+obj);
     }
 }

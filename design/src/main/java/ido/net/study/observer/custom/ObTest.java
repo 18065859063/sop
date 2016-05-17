@@ -27,7 +27,5 @@ public class ObTest {
 
         subject.notifyObserver("钢铁的时间上架，有需要的过来过来");
 
-
-
     }
 }

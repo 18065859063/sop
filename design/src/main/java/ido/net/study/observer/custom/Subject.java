@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Created by ido on 2016/5/17.
  */
-public class Subject<T> {
+public class Subject<T> implements  Observable<T>{
 
     private Map<Observer, Object>  observerMap = new ConcurrentHashMap<Observer, Object>();
 
@@ -26,7 +26,7 @@ public class Subject<T> {
     public void notifyObserver(T object){
         Set<Observer> set = observerMap.keySet();
         for(Observer observer: set){
-            observer.update(Subject.this, object);
+            observer.update((Observable)Subject.this, object);
         }
     }
 }

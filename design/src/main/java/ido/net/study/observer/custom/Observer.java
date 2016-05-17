@@ -5,5 +5,5 @@ package ido.net.study.observer.custom;
  */
 public interface Observer <T> {
 
-    public void update(Subject subject, T obj);
+    public void update(Observable subject, T obj);
 }
