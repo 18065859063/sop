@@ -5,9 +5,10 @@ package ido.net.study.stream;
  */
 
 /**
- *  文件操作：指针操作
+ *  文件操作：
+ *          指针操作
  *
- *
+ *http://www.runoob.com/java/java-files-io.html
  *
  */
 public class StreamDemo {
